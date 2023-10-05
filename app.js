@@ -63,8 +63,8 @@ app.get(
 app.get('/profile', (req, res) => {
     const user = req.user;
     const displayName = user.displayName;
-    const email = user.emails[0].value; // Assuming the first email is the primary one
-    const profileImageURL = user.photos[0].value; // Assuming the first photo is the profile picture
+    const email = user.emails[0].value; 
+    const profileImageURL = user.photos[0].value; 
 
     const cardHTML = `
         <div class="card" style="width: 18rem;">
